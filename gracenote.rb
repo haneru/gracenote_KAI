@@ -379,8 +379,6 @@ class Gracenote
       
       obj[:album_artist_name]  = a["ARTIST"].to_s
       obj[:album_title]        = a["TITLE"].to_s
-      obj[:album_year]         = a["DATE"].to_s
-      obj[:genre]              = _getOETElem(a["GENRE"])
 
       # Parse track metadata if there is any.
       obj[:tracks] = Array.new()
